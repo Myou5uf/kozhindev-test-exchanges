@@ -6,7 +6,7 @@
 
 - React
 - Typescript
-- Redux (RTQ Query)
+- Redux (RTK Query)
 - React-loader-spinner
 - Eslint
 - SCSS
