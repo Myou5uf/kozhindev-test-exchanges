@@ -37,7 +37,7 @@ function Header() {
         <header className='header'>
             <div className='container'>
                 <div className='header__row'>
-                    <a className='header__logo logo' href='/'>
+                    <a className='header__logo logo' href='/kozhindev-test-exchanges'>
                         React
                         <br />
                         Exchange rate

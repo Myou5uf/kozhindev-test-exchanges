@@ -16,3 +16,4 @@
 -   `npm install`
 -   `npm run start`
 
+Открыть в браузере [https://myou5uf.github.io/kozhindev-test-exchanges/](https://myou5uf.github.io/kozhindev-test-exchanges/)
