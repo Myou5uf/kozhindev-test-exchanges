@@ -1,0 +1,16 @@
+.btn {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 7px;
+    padding: 15px;
+    //border: 2px solid #fff;
+    transition: all 0.25s linear;
+    background-color: #4f98e7;
+
+    &:hover {
+        background-color: #1976D2;
+        color: #fff;
+    }
+}

@@ -1,0 +1,18 @@
+.tableRow {
+    border-radius: 20px;
+    transition: all 0.25s linear;
+
+    &__item {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 576px) {
+   .tableRow {
+       &__item {
+           padding: 10px;
+           font-size: 12px;
+       }
+   }
+}

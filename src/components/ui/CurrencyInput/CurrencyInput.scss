@@ -1,0 +1,19 @@
+@import 'src/style/variables';
+
+.currencyInput {
+    padding: 10px;
+    background: $white;
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid $violet;
+
+    &:hover, &:focus {
+        box-shadow: 0 0 2px 0 $violet inset, 0 0 2px 1px $violet;
+    }
+
+}
+
+

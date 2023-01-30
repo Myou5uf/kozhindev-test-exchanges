@@ -1,0 +1,101 @@
+@import 'src/style/variables';
+
+.tableCurrencies {
+
+    &__input {
+        width: 325px;
+        padding: 15px;
+        background: $white;
+        color: $black;
+        font-weight: 600;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 2px solid $violet;
+
+        &:hover, &:focus {
+            box-shadow: 0 0 2px 0 $violet inset, 0 0 2px 1px $violet;
+        }
+    }
+
+    &__tableWrapper {
+        overflow: auto;
+        padding-bottom: 8px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 25px auto 0;
+
+        &:hover {
+            background-color: $violet !important;
+        }
+    }
+}
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background-color: $secondary;
+    color: $white;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+    &_center {
+        margin: 0 auto;
+    }
+
+    &__headItem {
+        background-color: $primary;
+        font-size: 16px;
+        padding: 14px 20px;
+        line-height: 1.3;
+
+        &:first-child {
+            border-top-left-radius: 20px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 20px;
+        }
+    }
+
+    tbody {
+        tr:hover {
+            background-color: $primary;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .table {
+        border-spacing: 1px;
+
+        &__headItem {
+            font-size: 13px;
+            padding: 5px 14px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tableCurrencies {
+
+        &__btn {
+            font-size: 14px !important;
+            padding: 12px !important;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .tableCurrencies {
+
+        &__input {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

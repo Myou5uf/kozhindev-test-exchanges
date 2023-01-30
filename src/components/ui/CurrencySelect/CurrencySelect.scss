@@ -1,0 +1,17 @@
+@import 'src/style/variables';
+
+.currencySelect {
+    padding: 15px;
+    background: $white;
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid $violet;
+
+    &:hover, &:focus {
+        box-shadow: 0 0 2px 0 $violet inset, 0 0 2px 1px $violet;
+    }
+}

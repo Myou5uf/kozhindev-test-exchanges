@@ -1,0 +1,18 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__message {
+        font-weight: 700;
+        color: #ff0000;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+}
