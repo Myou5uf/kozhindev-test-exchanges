@@ -14,7 +14,7 @@ function Header() {
 
         // если нет ошибки при запросе по клику
         if (!isError) {
-            // сохраняем в стейт дату текущую дату
+            // сохраняем в стейт текущую дату
             setLastUpdateDate(getFormattedDate(Date.now()));
         } else {
             // иначе сохраняем в стейт ошибку
@@ -28,7 +28,7 @@ function Header() {
             // сохраняем в стейт ошибку
             setLastUpdateDate(JSON.stringify(errorOnFirstFetch));
         } else {
-            // иначе сохраняем в стейт дату текущую дату
+            // иначе сохраняем в стейт текущую дату
             setLastUpdateDate(getFormattedDate(Date.now()));
         }
     }, [errorOnFirstFetch]);

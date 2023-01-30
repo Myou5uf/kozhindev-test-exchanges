@@ -11,7 +11,7 @@ interface IProps {
     headerNames: string[];
 }
 
-const NUMBER_OF_CURRENCIES_PER_PAGE = 5; // количество валют на странице по умолчанию.
+const NUMBER_OF_CURRENCIES_PER_PAGE = 5; // количество валют на странице по умолчанию
 
 function TableCurrencies(props: IProps) {
     const { data, headerNames } = props;
@@ -21,19 +21,19 @@ function TableCurrencies(props: IProps) {
 
     const handleClickButtonLoadMore = useCallback(() => setVisibleAllCurrencies((prevState) => !prevState), []);
 
-    // возвращает отфильтрованные валюты (их ключи), если они есть в виде массиа, пример: ['AUD'] иначе возвращает переданные данные data
+    // возвращает отфильтрованные валюты (их ключи), если они есть, в виде массива, пример: ['AUD', 'AZN'] иначе возвращает переданные данные data
     const filteredCurrencies = useFilteredCurrencies(data, searchValue.trim());
 
     const getVisibleCurrencies = useCallback(() => {
         // если есть отфильтрованные валюты, то возвращаем их
         if (Array.isArray(filteredCurrencies) && filteredCurrencies.length > 0) return filteredCurrencies;
-        // иначе если НЕ нужно показывать все валюты, возвращаем первые currenciesPerRow валют
+        // иначе если НЕ нужно показывать все валюты, возвращаем первые NUMBER_OF_CURRENCIES_PER_PAGE валют
         if (!visibleAllCurrencies) {
             return Object.keys(filteredCurrencies)
                 .slice(0, NUMBER_OF_CURRENCIES_PER_PAGE);
         }
 
-        // иначе возвращаем все ключи всех валют
+        // иначе возвращаем ключи всех валют
         return Object.keys(data);
     }, [data, filteredCurrencies, visibleAllCurrencies]);
 
